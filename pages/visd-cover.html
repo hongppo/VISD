@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>표지</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { width: 1280px; height: 800px; margin: 0; }
+    body {
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      color: #16263d;
+      font-family: "Pretendard", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    .cover-top {
+      position: absolute;
+      top: 55px;
+      left: 72px;
+      right: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #dfe4eb;
+    }
+    .cover-project { font-size: 27px; font-weight: 800; letter-spacing: 1.5px; }
+    .cover-category { color: #7b8592; font-size: 12px; font-weight: 600; letter-spacing: 1.4px; }
+    .cover-title-position { position: absolute; top: 227px; left: 72px; width: 1136px; }
+    .cover-title { width: 1136px; }
+    .cover-title-accent { width: 40px; height: 4px; margin-bottom: 31px; background: #365d87; }
+    .cover-title h1 { margin: 0; font-size: 54px; font-weight: 750; line-height: 1.28; letter-spacing: -2px; }
+    .cover-title p { margin: 14px 0 0; color: #62738a; font-size: 27px; font-weight: 400; line-height: 1.4; letter-spacing: -0.8px; }
+    .cover-metadata-position { position: absolute; bottom: 71px; left: 72px; width: 1136px; }
+    .cover-metadata { display: grid; grid-template-columns: 1.4fr 0.8fr 1fr 1fr; width: 1136px; margin: 0; padding-top: 27px; border-top: 1px solid #cbd3de; }
+    .cover-metadata-item { min-width: 0; padding: 0 28px; border-left: 1px solid #e4e8ee; }
+    .cover-metadata-item:first-child { padding-left: 0; border-left: 0; }
+    .cover-metadata dt { margin: 0 0 13px; color: #7b8592; font-size: 12px; font-weight: 500; line-height: 1.4; }
+    .cover-metadata dd { margin: 0; color: #24364f; font-size: 17px; font-weight: 600; line-height: 1.5; letter-spacing: -0.2px; }
+  </style>
+</head>
+<body>
+  <header class="cover-top">
+    <div class="cover-project">VISD</div>
+    <div class="cover-category">WEBSITE IMPROVEMENT</div>
+  </header>
+  <main class="cover-title-position">
+    <section class="cover-title" data-component="cover-title" data-component-title="표지 제목" data-component-width="1136">
+      <div class="cover-title-accent" aria-hidden="true"></div>
+      <h1>VISD 사이트 개선 기획안</h1>
+      <p>한국 및 글로벌 서비스 설명 및 문의 전환 개선</p>
+    </section>
+  </main>
+  <footer class="cover-metadata-position">
+    <dl class="cover-metadata" data-component="cover-metadata" data-component-title="표지 문서 정보" data-component-width="1136">
+      <div class="cover-metadata-item"><dt>작성자</dt><dd>그로스마케팅랩</dd></div>
+      <div class="cover-metadata-item"><dt>버전</dt><dd>v0.1</dd></div>
+      <div class="cover-metadata-item"><dt>최초 생성일</dt><dd>2026/10/06</dd></div>
+      <div class="cover-metadata-item"><dt>최종 수정일</dt><dd>2026/10/06</dd></div>
+    </dl>
+  </footer>
+</body>
+</html>

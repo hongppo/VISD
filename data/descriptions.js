@@ -1,0 +1,1 @@
+window.MOCKUP_VIEWER_DESCRIPTIONS = {};

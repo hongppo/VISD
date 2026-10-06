@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>표지</title>
+  <link rel="stylesheet" href="assets/viewer.css">
+  <link rel="stylesheet" href="assets/code-export.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 20 20"><rect x="3" y="3" width="14" height="14" rx="2"/><path d="M3 7h14M7 7v10"/></svg></span><strong title="화면 기획서: VISD 사이트 개선">화면 기획서: VISD 사이트 개선</strong></div>
+    <div class="header-actions">
+      <button id="pick-component" class="button" type="button" aria-label="컴포넌트 선택" aria-pressed="false" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 3v13l4-4 3 5 2-1-3-5h6z"/></svg><span>컴포넌트 선택</span></button>
+      <button id="open-code" class="button" type="button" aria-label="코드 보기" aria-haspopup="dialog" aria-controls="code-dialog" disabled><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m6 5-4 5 4 5m8-10 4 5-4 5m-3-12-2 14"/></svg><span>코드 보기</span></button>
+      <button id="toggle-sidebar" class="button panel-toggle" type="button" aria-label="화면 목록 표시 전환" aria-controls="sidebar" aria-expanded="true"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="3" width="15" height="14" rx="2"/><path d="M7.5 3v14"/></svg><span>화면 목록</span></button>
+      <button id="toggle-descriptions" class="button panel-toggle" type="button" aria-label="화면 설명 표시 전환" aria-controls="description-panel" aria-expanded="true"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2.5" y="3" width="15" height="14" rx="2"/><path d="M12.5 3v14"/></svg><span>화면 설명</span></button>
+    </div>
+  </header>
+  <div class="app-body">
+    <aside id="sidebar" class="sidebar" aria-label="전체 화면 목록">
+      <div class="panel-heading"><h2>화면 목록</h2><button id="collapse-sidebar" class="icon-button" type="button" aria-controls="sidebar" aria-expanded="true" aria-label="화면 목록 숨기기" title="화면 목록 숨기기"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"/></svg></button></div>
+      <p class="panel-caption">순서대로 넘기거나 화면을 선택하세요.</p>
+      <nav id="page-tree" class="page-tree" aria-label="페이지 탐색"></nav>
+      <div class="sidebar-note"><span class="status-dot"></span>공통 뷰어</div>
+    </aside>
+    <div id="sidebar-rail" class="panel-rail panel-rail-left" hidden>
+      <button id="expand-sidebar" class="icon-button" type="button" aria-label="화면 목록 열기" title="화면 목록 열기" aria-controls="sidebar" aria-expanded="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg></button>
+    </div>
+    <main class="viewer-main">
+      <div class="viewer-toolbar">
+        <div class="page-heading"><div id="page-breadcrumb" class="breadcrumb">공통 뷰어</div><h1 id="page-title">화면 준비 중</h1></div>
+        <div class="canvas-controls" role="group" aria-label="화면 번호 표시 및 확대 및 축소">
+          <button id="toggle-annotations" class="button annotation-toggle" type="button" aria-label="번호 표시" title="화면 번호 숨기기" aria-controls="annotation-layer" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="10" r="7.5"/><path d="m8.5 8 1.5-1v6m-1.5 0h3"/></svg><span>번호 표시</span></button>
+          <span class="control-divider" aria-hidden="true"></span>
+          <button id="zoom-out" class="icon-button" type="button" aria-label="축소" title="축소"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10h11"/></svg></button>
+          <button id="zoom-reset" class="zoom-value" type="button" title="100%로 보기" aria-label="100%로 보기">100%</button>
+          <button id="zoom-in" class="icon-button" type="button" aria-label="확대" title="확대"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.5 10h11M10 4.5v11"/></svg></button>
+          <span class="control-divider"></span>
+          <button id="zoom-fit" class="button fit-button" type="button" aria-label="너비에 맞추고 맨 위로 이동" title="너비에 맞추고 맨 위로 이동" aria-pressed="true"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M7 3H3v4m10-4h4v4M3 13v4h4m10-4v4h-4"/></svg><span>너비 맞춤</span></button>
+        </div>
+      </div>
+      <div id="component-pick-hint" class="component-pick-hint" hidden><span role="status">복사할 컴포넌트를 클릭하세요.</span><button id="cancel-component-pick" class="button" type="button">선택 취소</button></div>
+      <div id="canvas-viewport" class="canvas-viewport" tabindex="0" aria-label="목업 화면. 핀치로 확대하고, 스크롤 또는 스페이스키와 드래그로 이동할 수 있습니다.">
+        <div id="canvas-area" class="canvas-area">
+          <div id="canvas-stack" class="canvas-stack">
+            <div class="artboard-label"><span id="artboard-kind"></span><span id="artboard-size">1280 × 800</span></div>
+            <div id="artboard-shell" class="artboard-shell"><div id="artboard" class="artboard"><iframe id="page-frame" title="현재 페이지의 목업" sandbox="allow-scripts allow-downloads"></iframe><div id="annotation-layer" class="annotation-layer" aria-label="화면 설명 번호"></div></div></div>
+          </div>
+          <div id="empty-state" class="empty-state" hidden><h2>등록된 화면이 없습니다.</h2><p>화면 목록에 페이지를 추가하면 이곳에 표시됩니다.</p></div>
+        </div>
+      </div>
+      <footer class="page-navigation">
+        <div class="navigation-help"><svg viewBox="0 0 20 20" aria-hidden="true"><rect x="2" y="4" width="16" height="12" rx="2"/><path d="M5 8h1m3 0h1m3 0h1M5 12h9"/></svg><span>← → 페이지 | Space + 드래그 이동</span></div>
+        <div class="pagination"><button id="previous-page" class="nav-button" type="button" aria-label="이전 페이지"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"/></svg><span>이전</span></button><span id="page-counter" class="page-counter" aria-live="polite"><strong>0</strong><span>/</span><span>0</span></span><button id="next-page" class="nav-button" type="button" aria-label="다음 페이지"><span>다음</span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg></button></div>
+        <div id="page-id" class="page-id"></div>
+      </footer>
+    </main>
+    <div id="descriptions-rail" class="panel-rail panel-rail-right" hidden>
+      <button id="expand-descriptions" class="icon-button" type="button" aria-label="화면 설명 열기" title="화면 설명 열기" aria-controls="description-panel" aria-expanded="false"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m12 5-5 5 5 5"/></svg></button>
+    </div>
+    <aside id="description-panel" class="description-panel" aria-label="현재 화면 설명">
+      <div class="panel-heading"><h2>화면 설명</h2><button id="collapse-descriptions" class="icon-button" type="button" aria-controls="description-panel" aria-expanded="true" aria-label="화면 설명 숨기기" title="화면 설명 숨기기"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m8 5 5 5-5 5"/></svg></button></div>
+      <div class="description-context"><span id="description-page-label" class="eyebrow">현재 화면</span><h3 id="description-page-title"></h3><p id="description-page-summary"></p></div>
+      <div id="description-list" class="description-list"></div>
+    </aside>
+  </div>
+  <dialog id="code-dialog" class="code-dialog" aria-labelledby="code-dialog-title" aria-describedby="code-context">
+    <div class="code-dialog-heading"><div><h2 id="code-dialog-title">코드 보기</h2><p id="code-context"></p></div><button id="close-code" class="icon-button" type="button" aria-label="코드 보기 닫기"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="m5 5 10 10M15 5 5 15"/></svg></button></div>
+    <div class="code-options"><label for="code-target">복사 대상</label><select id="code-target"></select><span>HTML + CSS</span></div>
+    <textarea id="code-content" class="code-content" readonly spellcheck="false" aria-label="복사할 HTML과 CSS 코드"></textarea>
+    <div class="code-dialog-footer"><p id="code-copy-status" role="status" aria-live="polite">필요한 코드를 선택해 복사하세요.</p><div><button id="select-code" class="button" type="button">코드 전체 선택</button><button id="copy-code" class="button code-copy-button" type="button">코드 복사</button></div></div>
+  </dialog>
+  <div id="viewer-status" class="sr-only" role="status" aria-live="polite"></div>
+  <script src="data/manifest.js"></script>
+  <script src="data/descriptions.js"></script>
+  <script src="data/page-sources.js"></script>
+  <script src="assets/canvas-math.js"></script>
+  <script src="assets/canvas-input.js"></script>
+  <script src="assets/code-export.js?v=20260921-dropdown"></script>
+  <script src="assets/viewer.js?v=20260921"></script>
+</body>
+</html>
