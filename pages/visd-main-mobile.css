@@ -61,3 +61,17 @@ header{height:76px;min-height:76px;padding:16px 20px;flex-direction:row;align-it
 .hero-background>span{left:20px;right:20px;bottom:20px;font-size:12px;line-height:1.5}
 .hero-background small{font-size:11px;margin-top:4px}
 .hero-head{margin-bottom:0}
+
+/* Keep mobile copy grouped by meaning rather than isolated trailing words. */
+h2,.intro h2,.global-subtitle{text-wrap:balance}
+p{text-wrap:pretty}
+.global-subtitle{font-size:21px;letter-spacing:-.6px}
+.global-title,.mobile-en-global{font-size:27px;letter-spacing:-1px;line-height:1.35}
+
+/* Intentional copy breaks remain exactly two lines at the 390px mockup width. */
+.mobile-copy-line{display:block;white-space:nowrap}
+.application .text{padding:22px 14px}
+.application p:has(.mobile-copy-line){font-size:14px;letter-spacing:-.2px;line-height:1.8}
+.global-subtitle{font-size:20px;letter-spacing:-.6px}
+.mobile-en-subtitle{font-size:18px;letter-spacing:-.3px;line-height:1.6}
+.global-title,.mobile-en-global{font-size:26px;letter-spacing:-1px}
