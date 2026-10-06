@@ -33,3 +33,12 @@ h2{white-space:nowrap}
 .intro .intro-single-line{max-width:none;white-space:nowrap;font-size:16px;letter-spacing:-.3px}
 
 .application .brand-collaboration-copy{white-space:nowrap}
+
+/* Background media sits behind hero copy in every main variant. */
+.hero{position:relative;isolation:isolate;min-height:650px;padding:64px 64px 100px;display:flex;align-items:center;background:#ededed}
+.hero-background{position:absolute;inset:0;z-index:0;overflow:hidden;background:#ededed;pointer-events:none}
+.hero-background>svg{position:absolute;inset:0;width:100%;height:100%;stroke:#c7c7c7;stroke-width:.2;fill:none}
+.hero-background>span{position:absolute;bottom:24px;left:64px;right:64px;font-size:14px;line-height:1.6;color:#777}
+.hero-background small{display:block;font-size:12px}
+.hero-content{position:relative;z-index:1;width:100%;min-width:0}
+.hero-head{margin-bottom:0}

@@ -11,7 +11,7 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "src": "pages/visd-cover.html",
           "width": 1280,
           "height": 800,
-          "kind": "VISD | 표지",
+          "kind": "표지",
           "summary": "",
           "hideEmptyDescription": true
         }
@@ -28,7 +28,7 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "width": 1280,
           "height": 2900,
           "autoHeight": true,
-          "kind": "한글 | 와이어프레임",
+          "kind": "메인 1안",
           "summary": "",
           "hideEmptyDescription": true
         },
@@ -39,7 +39,18 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "width": 1280,
           "height": 3700,
           "autoHeight": true,
-          "kind": "한글 | 브랜드 중심 와이어프레임",
+          "kind": "메인 2안",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-main-ko-v2-mobile",
+          "title": "메인 2안 모바일",
+          "src": "pages/visd-main-ko-v2-mobile.html",
+          "width": 390,
+          "height": 6000,
+          "autoHeight": true,
+          "kind": "메인 2안 모바일",
           "summary": "",
           "hideEmptyDescription": true
         }
@@ -48,7 +59,30 @@ window.MOCKUP_VIEWER_MANIFEST = {
     {
       "id": "visd-en",
       "title": "영문",
-      "children": []
+      "children": [
+        {
+          "id": "visd-main-en",
+          "title": "메인",
+          "src": "pages/visd-main-en.html",
+          "width": 1280,
+          "height": 3700,
+          "autoHeight": true,
+          "kind": "메인",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-main-en-mobile",
+          "title": "메인 모바일",
+          "src": "pages/visd-main-en-mobile.html",
+          "width": 390,
+          "height": 6000,
+          "autoHeight": true,
+          "kind": "메인 모바일",
+          "summary": "",
+          "hideEmptyDescription": true
+        }
+      ]
     }
   ]
 };
