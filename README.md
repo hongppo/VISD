@@ -13,7 +13,9 @@
 - 화면 설명: `data/descriptions.js`
 - 소스 생성: `python3 scripts/build_sources.py`
 
-HTML 수정 후 소스를 다시 생성합니다. `data/page-sources.js`는 직접 수정하지 않습니다. RIST 전용 데이터와 문서 빌더는 포함하지 않습니다.
+HTML 수정 후 소스를 다시 생성합니다. `data/page-sources.js`는 직접 수정하지 않습니다. 빌드 명령은 생성 소스를 갱신한 다음 `index.html`의 로컬 JS와 CSS URL에 파일 내용 기반 버전을 적용하고 `Share URL`을 출력합니다. 같은 내용으로 다시 빌드해도 버전은 유지됩니다. RIST 전용 데이터와 문서 빌더는 포함하지 않습니다.
+
+Git 배포를 요청받으면 `python3 scripts/build_sources.py`를 실행하고 변경 사항을 확인한 뒤 커밋과 푸시를 진행합니다. GitHub Pages 빌드가 완료된 후 해당 빌드에서 출력된 `Share URL`을 전달합니다. 예: `https://hongppo.github.io/VISD/?v=<빌드 버전>`. 이 링크의 버전은 첫 HTML 요청의 브라우저 캐시를 구분하며, 페이지 이동에 사용하는 `#` 주소와 함께 사용할 수 있습니다. 이미 열린 탭은 새로고침해야 새 버전이 표시됩니다.
 
 
 ## 페이지 구성
