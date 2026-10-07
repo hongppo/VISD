@@ -53,6 +53,28 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "kind": "메인 2안 모바일",
           "summary": "",
           "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-footer-ko-revision",
+          "title": "하단 문의/푸터(한글, 수정)",
+          "src": "pages/visd-footer-ko-revision.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "하단 문의/푸터(한글, 수정)",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-solution-ko-revision",
+          "title": "솔루션(한글, 수정)",
+          "src": "pages/visd-solution-ko-revision.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "솔루션(한글, 수정)",
+          "summary": "",
+          "hideEmptyDescription": true
         }
       ]
     },
@@ -79,6 +101,17 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "height": 6000,
           "autoHeight": true,
           "kind": "메인 모바일",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-footer-en-revision",
+          "title": "하단 문의/푸터(영문, 수정)",
+          "src": "pages/visd-footer-en-revision.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "하단 문의/푸터(영문, 수정)",
           "summary": "",
           "hideEmptyDescription": true
         }
