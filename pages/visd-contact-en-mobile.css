@@ -26,6 +26,7 @@ button:disabled,input:disabled,textarea:disabled{opacity:1;cursor:default}
 .country-code .chevron{font-size:21px;line-height:1;color:#555}
 .phone-row input{font-size:14px}
 .form-field textarea{height:138px;resize:none;padding:12px}
+.form-helper{margin-top:8px;color:#666;font-size:13px;line-height:1.55}
 .form-actions{margin-top:21px}
 .privacy-consent{display:flex;align-items:flex-start;gap:9px;font-size:14px;line-height:1.55;word-break:keep-all}
 .privacy-consent input{width:17px;height:17px;margin:2px 0 0;flex:none;accent-color:#333}

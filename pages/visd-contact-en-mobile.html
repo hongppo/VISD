@@ -27,6 +27,10 @@
           <input id="mobile-contact-name" type="text" placeholder="Enter your name" disabled>
         </div>
         <div class="form-field">
+          <label for="mobile-contact-deployment-region">Planned deployment country/region <span class="optional">(optional)</span></label>
+          <input id="mobile-contact-deployment-region" type="text" placeholder="Enter the planned country or region" disabled>
+        </div>
+        <div class="form-field">
           <label for="mobile-contact-phone">Phone <span aria-label="required">*</span></label>
           <div class="phone-row">
             <span id="mobile-contact-country-code-anchor" class="phone-code-marker-anchor" aria-hidden="true"></span>
@@ -35,16 +39,17 @@
           </div>
         </div>
         <div class="form-field">
-          <label for="mobile-contact-company">Company <span class="optional">(optional)</span></label>
-          <input id="mobile-contact-company" type="text" placeholder="Enter your company name" disabled>
-        </div>
-        <div class="form-field">
           <label for="mobile-contact-email">Email <span aria-label="required">*</span></label>
           <input id="mobile-contact-email" type="email" placeholder="Enter your email address" disabled>
         </div>
         <div class="form-field">
+          <label for="mobile-contact-company">Company <span class="optional">(optional)</span></label>
+          <input id="mobile-contact-company" type="text" placeholder="Enter your company name" disabled>
+        </div>
+        <div class="form-field">
           <label for="mobile-contact-message">Inquiry <span aria-label="required">*</span></label>
-          <textarea id="mobile-contact-message" placeholder="Tell us about your inquiry" disabled></textarea>
+          <textarea id="mobile-contact-message" aria-describedby="mobile-contact-message-help" placeholder="Tell us about your inquiry" disabled></textarea>
+          <p id="mobile-contact-message-help" class="form-helper">Please share your planned timing, installation location, and expected quantity to help us advise you.</p>
         </div>
         <div class="form-actions">
           <label class="privacy-consent"><input type="checkbox" disabled><span>I agree to the <a href="https://www.global-visd.com/en/privacy/" tabindex="-1" aria-disabled="true">Privacy Policy</a>. (required)</span></label>

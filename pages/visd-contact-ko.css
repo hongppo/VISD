@@ -37,6 +37,7 @@ button:disabled,input:disabled,textarea:disabled{opacity:1;cursor:default}
 .country-code{display:flex;align-items:center;justify-content:space-between;gap:7px;white-space:nowrap;text-align:left;font-size:16px}
 .country-code .chevron{font-size:25px;line-height:1;color:#555}
 .form-field textarea{height:168px;resize:none;padding:14px 16px}
+.form-helper{margin-top:8px;color:#666;font-size:15px;line-height:1.5;word-break:keep-all}
 .form-actions{margin-top:24px;display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
 .privacy-consent{display:flex;align-items:flex-start;gap:10px;font-size:15px;line-height:1.5}
 .privacy-consent input{width:18px;height:18px;margin:2px 0 0;flex:none;accent-color:#333}

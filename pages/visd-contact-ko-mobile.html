@@ -35,16 +35,21 @@
           </div>
         </div>
         <div class="form-field">
-          <label for="mobile-contact-company">회사 <span class="optional">(선택)</span></label>
-          <input id="mobile-contact-company" type="text" placeholder="회사를 입력해주세요." disabled>
-        </div>
-        <div class="form-field">
           <label for="mobile-contact-email">이메일 <span aria-label="필수">*</span></label>
           <input id="mobile-contact-email" type="email" placeholder="이메일을 입력해주세요." disabled>
         </div>
         <div class="form-field">
+          <label for="mobile-contact-company">회사 <span class="optional">(선택)</span></label>
+          <input id="mobile-contact-company" type="text" placeholder="회사를 입력해주세요." disabled>
+        </div>
+        <div class="form-field">
+          <label for="mobile-contact-deployment-region">도입 예정 국가/지역 <span class="optional">(선택)</span></label>
+          <input id="mobile-contact-deployment-region" type="text" placeholder="도입 예정 국가/지역을 입력해주세요." disabled>
+        </div>
+        <div class="form-field">
           <label for="mobile-contact-message">문의사항 <span aria-label="필수">*</span></label>
-          <textarea id="mobile-contact-message" placeholder="문의사항을 입력해주세요." disabled></textarea>
+          <textarea id="mobile-contact-message" aria-describedby="mobile-contact-message-help" placeholder="문의사항을 입력해주세요." disabled></textarea>
+          <p id="mobile-contact-message-help" class="form-helper">도입 예정 시기, 설치 장소, 예상 수량 등을 알려주시면 상담에 도움이 됩니다.</p>
         </div>
         <div class="form-actions">
           <label class="privacy-consent"><input type="checkbox" disabled><span><a href="https://www.global-visd.com/privacy/" tabindex="-1" aria-disabled="true">개인정보 처리방침</a>에 동의합니다. (필수)</span></label>
