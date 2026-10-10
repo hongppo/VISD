@@ -18,8 +18,8 @@ window.MOCKUP_VIEWER_MANIFEST = {
       ]
     },
     {
-      "id": "visd-ko",
-      "title": "한글",
+      "id": "visd-ko-design",
+      "title": "한글(디자인 변경)",
       "children": [
         {
           "id": "visd-main-ko",
@@ -55,6 +55,23 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "hideEmptyDescription": true
         },
         {
+          "id": "visd-contact-ko",
+          "title": "문의하기",
+          "src": "pages/visd-contact-ko.html",
+          "width": 1280,
+          "height": 1900,
+          "autoHeight": true,
+          "kind": "문의하기",
+          "summary": "",
+          "hideEmptyDescription": true
+        }
+      ]
+    },
+    {
+      "id": "visd-ko-text",
+      "title": "한글(텍스트 수정)",
+      "children": [
+        {
           "id": "visd-footer-ko-revision",
           "title": "하단 문의/푸터(한글, 수정)",
           "src": "pages/visd-footer-ko-revision.html",
@@ -66,21 +83,43 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "hideEmptyDescription": true
         },
         {
-          "id": "visd-solution-ko-revision",
-          "title": "솔루션(한글, 수정)",
-          "src": "pages/visd-solution-ko-revision.html",
+          "id": "visd-software-ko",
+          "title": "소프트웨어(한글)",
+          "src": "pages/visd-software-ko.html",
           "width": 1280,
           "height": 800,
           "autoHeight": true,
-          "kind": "솔루션(한글, 수정)",
+          "kind": "소프트웨어(한글)",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-project-ko",
+          "title": "프로젝트(한글)",
+          "src": "pages/visd-project-ko.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "프로젝트(한글)",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-article-ko",
+          "title": "아티클(한글)",
+          "src": "pages/visd-article-ko.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "아티클(한글)",
           "summary": "",
           "hideEmptyDescription": true
         }
       ]
     },
     {
-      "id": "visd-en",
-      "title": "영문",
+      "id": "visd-en-design",
+      "title": "영문(디자인 변경)",
       "children": [
         {
           "id": "visd-main-en",
@@ -105,6 +144,23 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "hideEmptyDescription": true
         },
         {
+          "id": "visd-contact-en",
+          "title": "문의하기",
+          "src": "pages/visd-contact-en.html",
+          "width": 1280,
+          "height": 1900,
+          "autoHeight": true,
+          "kind": "문의하기",
+          "summary": "",
+          "hideEmptyDescription": true
+        }
+      ]
+    },
+    {
+      "id": "visd-en-text",
+      "title": "영문(텍스트 수정)",
+      "children": [
+        {
           "id": "visd-footer-en-revision",
           "title": "하단 문의/푸터(영문, 수정)",
           "src": "pages/visd-footer-en-revision.html",
@@ -112,6 +168,28 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "height": 800,
           "autoHeight": true,
           "kind": "하단 문의/푸터(영문, 수정)",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-software-en",
+          "title": "소프트웨어(영문)",
+          "src": "pages/visd-software-en.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "소프트웨어(영문)",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-hardware-en",
+          "title": "하드웨어(영문)",
+          "src": "pages/visd-hardware-en.html",
+          "width": 1280,
+          "height": 800,
+          "autoHeight": true,
+          "kind": "하드웨어(영문)",
           "summary": "",
           "hideEmptyDescription": true
         }
