@@ -64,6 +64,17 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "kind": "문의하기",
           "summary": "",
           "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-contact-ko-mobile",
+          "title": "문의하기 모바일",
+          "src": "pages/visd-contact-ko-mobile.html",
+          "width": 390,
+          "height": 1900,
+          "autoHeight": true,
+          "kind": "문의하기 모바일",
+          "summary": "",
+          "hideEmptyDescription": true
         }
       ]
     },
@@ -151,6 +162,17 @@ window.MOCKUP_VIEWER_MANIFEST = {
           "height": 1900,
           "autoHeight": true,
           "kind": "문의하기",
+          "summary": "",
+          "hideEmptyDescription": true
+        },
+        {
+          "id": "visd-contact-en-mobile",
+          "title": "문의하기 모바일",
+          "src": "pages/visd-contact-en-mobile.html",
+          "width": 390,
+          "height": 1900,
+          "autoHeight": true,
+          "kind": "문의하기 모바일",
           "summary": "",
           "hideEmptyDescription": true
         }

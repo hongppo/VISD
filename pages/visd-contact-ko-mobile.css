@@ -1,0 +1,46 @@
+*{box-sizing:border-box}
+html,body{width:390px;max-width:100%;margin:0;background:#fff;color:#222;font-family:"Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+body{font-size:16px;line-height:1.6}
+main{width:390px;max-width:100%;min-width:0}
+h1,p{margin:0}
+button,input,textarea{font:inherit}
+button:disabled,input:disabled,textarea:disabled{opacity:1;cursor:default}
+.site-header{height:68px;padding:0 20px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ccc}
+.logo,.footer-logo{font-size:27px;letter-spacing:3px;line-height:1}
+.menu-toggle{width:44px;height:44px;display:grid;place-items:center;padding:0;border:0;background:none;color:#222}
+.menu-toggle svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.6}
+.page-intro{padding:23px 20px 18px}
+.page-intro h1{font-size:34px;line-height:1.3;letter-spacing:-1px}
+.page-intro p{margin-top:11px;font-size:16px;line-height:1.55;word-break:keep-all;text-wrap:pretty}
+.form-section{padding:0 20px 38px}
+.form-field+.form-field{margin-top:18px}
+.form-field label{display:block;margin-bottom:7px;font-size:15px;font-weight:700;line-height:1.45}
+.form-field label span:not(.optional){color:#333}
+.form-field .optional{font-size:14px;font-weight:400;color:#666}
+.form-field input,.form-field textarea,.country-code{width:100%;min-width:0;border:1px solid #aaa;border-radius:0;background:#fff;color:#333}
+.form-field input,.country-code{height:49px;padding:0 12px}
+.form-field input::placeholder,.form-field textarea::placeholder{color:#858585;opacity:1}
+.phone-row{position:relative;display:grid;grid-template-columns:138px minmax(0,1fr);gap:8px}
+.phone-code-marker-anchor{position:absolute;top:-32px;left:136px;width:1px;height:32px;pointer-events:none}
+.country-code{display:flex;align-items:center;justify-content:space-between;gap:4px;white-space:nowrap;text-align:left;font-size:13px;padding:0 9px}
+.country-code .chevron{font-size:21px;line-height:1;color:#555}
+.phone-row input{font-size:14px}
+.form-field textarea{height:138px;resize:none;padding:12px}
+.form-actions{margin-top:21px}
+.privacy-consent{display:flex;align-items:flex-start;gap:9px;font-size:14px;line-height:1.55;word-break:keep-all}
+.privacy-consent input{width:17px;height:17px;margin:2px 0 0;flex:none;accent-color:#333}
+.privacy-consent a,.business-details a{color:inherit;text-decoration:underline;text-underline-offset:3px;pointer-events:none}
+.submit-button{width:100%;height:50px;margin-top:22px;padding:0 17px;display:flex;align-items:center;justify-content:space-between;border:1px solid #222;background:#222;color:#fff;font-size:16px}
+.submit-button span{font-size:25px;line-height:1}
+.brand-section{padding:36px 20px 40px;background:#f6f6f6;border-top:1px solid #d0d0d0}
+.image-placeholder{height:205px;position:relative;background:#ededed;border:1px solid #aaa;overflow:hidden}
+.image-placeholder svg{position:absolute;inset:0;width:100%;height:100%;fill:none;stroke:#b5b5b5;stroke-width:.35}
+.brand-note{margin-top:24px;font-size:17px;line-height:1.65;word-break:keep-all;text-wrap:pretty}
+.closing-copy{margin-top:35px;display:grid;gap:29px}
+.closing-copy .english-copy{font-size:23px;line-height:1.35;font-weight:700;letter-spacing:-.5px;text-wrap:balance}
+.closing-copy div p:last-child{margin-top:8px;font-size:16px;line-height:1.55;word-break:keep-all;text-wrap:pretty}
+.site-footer{padding:31px 20px 35px;background:#eee;border-top:1px solid #ccc}
+.business-details{margin-top:23px;font-size:14px;line-height:1.7}
+.business-details p{overflow-wrap:anywhere}
+.business-details a{display:inline-block;margin-top:15px;font-weight:700}
+.copyright{margin-top:26px;font-size:11px;color:#555;line-height:1.5}

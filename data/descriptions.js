@@ -18,14 +18,14 @@ window.MOCKUP_VIEWER_DESCRIPTIONS = {
     {
       "id": "project-menu-hidden-until-open",
       "title": "프로젝트 메뉴 숨김",
-      "body": "프로젝트를 추가한 뒤 공개할 예정이므로, 그전까지 프로젝트 메뉴를 숨겨 주세요."
+      "body": "프로젝트를 추가한 뒤 공개할 예정이므로, 그전까지 프로젝트 메뉴를 숨겨 주세요. 영문 메뉴도 동일하게 숨겨 주세요."
     }
   ],
   "visd-article-ko": [
     {
       "id": "article-menu-hidden-until-open",
       "title": "아티클 메뉴 숨김",
-      "body": "아티클별 고유 URL(슬러그)을 가진 상세 페이지를 구축한 뒤 공개할 예정이므로, 그전까지 아티클 메뉴를 숨겨 주세요."
+      "body": "아티클별 고유 URL(슬러그)을 가진 상세 페이지를 구축한 뒤 공개할 예정이므로, 그전까지 아티클 메뉴를 숨겨 주세요. 영문 메뉴도 동일하게 숨겨 주세요."
     }
   ],
   "visd-contact-ko": [
@@ -36,6 +36,16 @@ window.MOCKUP_VIEWER_DESCRIPTIONS = {
       "targetId": "contact-country-code-anchor",
       "x": 646,
       "y": 625
+    }
+  ],
+  "visd-contact-ko-mobile": [
+    {
+      "id": "mobile-contact-country-code-default",
+      "title": "국가번호 기본값",
+      "body": "국문 페이지에서는 국가번호의 기본값을 대한민국(+82)으로 표시합니다. 연락처는 010-1234-5678, 01012345678, 1012345678 모두 입력할 수 있으며, 입력 화면에서는 사용자가 입력한 형식을 그대로 유지합니다. 대한민국이 선택된 경우 DB 저장 시에만 하이픈 등 구분 문자를 정리하고, 국내 접두사 0이 있을 때만 제거한 뒤 국가번호 +82를 붙입니다. 10으로 시작하면 첫 숫자 1을 제거하지 않습니다. 예: 010-1234-5678 → +821012345678, 01012345678 → +821012345678, 1012345678 → +821012345678.",
+      "targetId": "mobile-contact-country-code-anchor",
+      "x": 156,
+      "y": 335
     }
   ],
   "visd-footer-ko-revision": [
